@@ -1,0 +1,30 @@
+@import "sample5-headings.css";
+
+figure {
+  margin: 4mm 0;
+  background: #eee;
+}
+
+img {
+  max-width: 100%;
+  border: solid 0.5mm #000;
+}
+img[src$=".svg"] {
+  border: none;
+}
+
+figure.float-bottom {
+  float: bottom;
+  float-reference: page;
+  margin-bottom: 0;
+}
+figure.float-right {
+  float: right;
+  /* float-reference: page; */
+  width: 17em;
+  margin: 2mm 0 2mm 2em;
+}
+
+.float-clear {
+  clear: both;
+}

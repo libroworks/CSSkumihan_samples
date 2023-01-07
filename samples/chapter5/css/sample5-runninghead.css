@@ -1,0 +1,29 @@
+@import "sample5-headings.css";
+
+@page: right {
+  @right-middle {
+    content: string(chapter, first);
+    font-size: 11Q;
+    writing-mode: vertical-rl;
+    vertical-align: top;
+  }
+  @top-right {
+    content: string(section-number, first) " " string(section, first);
+    font-size: 11Q;
+  }
+}
+@page: nth(1) {
+  @right-middle {
+    content: none;
+  }
+}
+
+/* 柱 */
+h1 {
+  /* string-set: chapter content(); */
+  string-set: chapter content();
+}
+
+h2 {
+  string-set: section content(), section-number content(before);
+}

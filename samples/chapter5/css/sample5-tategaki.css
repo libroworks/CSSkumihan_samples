@@ -1,0 +1,74 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+
+/*リセット*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@page {
+  size: 148mm 210mm;
+  margin: 17.5mm 17.25mm 17.5mm 17.25mm;
+  font-size: 10Q;
+
+  /* ノンブル */
+  @bottom-center {
+    content: counter(page);
+    writing-mode: horizontal-tb;
+  }
+}
+
+:root {
+  font-size: 20Q;
+  line-height: 36Q;
+}
+
+body {
+  writing-mode: vertical-rl;
+  /* text-orientation: upright; */
+  font-family: "Noto Sans JP";
+  orphans: 1;
+  widows: 1;
+  text-spacing: normal;
+}
+
+p {
+  text-align: justify;
+  text-indent: 1em;
+}
+
+em {
+  font-style: normal;
+  text-emphasis-style: sesame;
+}
+
+h2 {
+  break-before: page;
+  line-height: 40Q;
+  width: 3rlh;
+  text-spacing: auto;
+}
+
+h3 {
+  line-height: 2rlh;
+  width: 2rlh;
+}
+
+ul,
+ol {
+  margin-top: 2em;
+}
+
+figure {
+  float: top;
+  float-reference: page;
+  writing-mode: horizontal-tb;
+  width: 100%;
+  margin-bottom: 2em;
+  text-align: center;
+}
+img {
+  max-width: 95%;
+}

@@ -1,0 +1,60 @@
+@import "sample5-headings.css";
+
+:root {
+  --chapter-number: 2;
+}
+
+@page {
+  bleed: 3mm;
+  marks: crop;
+  counter-reset: chapter-counter var(--chapter-number);
+}
+
+@page: right {
+  @right-top {
+    content: counter(chapter-counter);
+    font-size: 29Q;
+    line-height: 1em;
+    text-align: left;
+    width: 12mm;
+    margin-left: 5.5mm;
+    padding-left: 1mm;
+    height: 8mm;
+    margin-top: calc(5mm * var(--chapter-number));
+    border-bottom: solid 2mm #3a3a3a;
+    background: #ddd;
+  }
+
+  @right-middle {
+    content: string(chapter, first);
+    font-size: 11Q;
+    line-height: 1em;
+    width: 1em;
+    writing-mode: vertical-rl;
+    vertical-align: top;
+    margin-left: 6.5mm;
+    margin-top: calc(8mm + 2.5mm * var(--chapter-number));
+    background: #eee;
+  }
+  @top-right {
+    content: string(section-number, first) " " string(section, first);
+    font-size: 11Q;
+  }
+}
+@page: nth(1) {
+  @right-top {
+    content: none;
+  }
+  @right-middle {
+    content: none;
+  }
+}
+
+/* 柱 */
+h1 {
+  string-set: chapter content();
+}
+
+h2 {
+  string-set: section content(), section-number content(before);
+}

@@ -1,0 +1,83 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@page {
+  size: A5;
+  margin: 15mm 15.5mm 15mm 15.5mm;
+}
+
+body {
+  font-size: 13Q;
+  line-height: 24Q;
+  font-family: "Noto Sans JP";
+  font-weight: 400;
+  text-spacing: auto;
+  widows: 1;
+  orphans: 1;
+}
+
+p {
+  font-size: 13Q;
+  line-height: 24Q;
+  text-indent: 1em;
+  text-align: justify;
+}
+
+/* ルート要素 */
+:root {
+  counter-reset: chapter-counter;
+  line-height: 24Q;
+}
+
+/* 袋文字 */
+h3 {
+  font-size: 38Q;
+  font-weight: 700;
+  line-height: 1.5em;
+  letter-spacing: 0.25em;
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke: 0.2mm #000;
+  text-stroke: 0.2mm #000;
+  text-shadow: #aaa 0.05em 0.05em 0;
+}
+
+ul {
+  font-size: 16Q;
+  line-height: 1.7em;
+  margin-left: 2em;
+  margin: 0.5lh 0 1lh 2em;
+}
+
+/* 丸付き文字 */
+.round {
+  font-weight: 700;
+  border: solid 0.5mm #000;
+  border-radius: 50%;
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  position: relative;
+  top: -0.05em;
+  text-align: center;
+  line-height: 1em;
+}
+
+/* 長体 */
+.chou1 {
+  font-size: 0.9em;
+  line-height: 0.9lh;
+  transform: scaleY(1.111);
+  margin: 0.2lh 0;
+}
+.chou2 {
+  font-size: 0.8em;
+  line-height: 0.8lh;
+  transform: scaleY(1.25);
+  margin: 0.2lh 0;
+}
