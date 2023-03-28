@@ -1,21 +1,18 @@
 /*リセット*/
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 @page {
-    size: 210mm 297mm;
-    margin: 8mm;
-    font-size: 10q;
+  size: 210mm 297mm;
+  margin: 8mm;
+  font-size: 10Q;
 }
 
-
-
-
-.color-box{
-    display: inline-block;
-    width: 3em;
-    font-size: 14q;
+.color-box {
+  display: inline-block;
+  inline-size: 3em;
+  font-size: 14Q;
 }

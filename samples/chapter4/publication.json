@@ -1,0 +1,31 @@
+{
+  "@context": [
+    "https://schema.org",
+    "https://www.w3.org/ns/pub-context"
+  ],
+  "type": "Book",
+  "conformsTo": "https://github.com/vivliostyle/vivliostyle-cli",
+  "author": "",
+  "dateModified": "2023-03-23T10:20:38.121Z",
+  "name": "merged-output.pdf",
+  "readingOrder": [
+    {
+      "url": "0frontmatter.html",
+      "name": "コンピュータの<br>重箱の隅"
+    },
+    {
+      "url": "chapter1.html",
+      "name": "第1章<br>重箱の左隅"
+    },
+    {
+      "url": "chapter2.html",
+      "name": "第2章<br>重箱の右隅"
+    },
+    {
+      "url": "chapter3.html",
+      "name": "第3章<br>重箱の下隅"
+    }
+  ],
+  "resources": [],
+  "links": []
+}

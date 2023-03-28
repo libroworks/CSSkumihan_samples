@@ -1,166 +1,147 @@
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Serif+JP&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Serif+JP&display=swap");
 
 /*リセット*/
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
 }
 
 @page {
-    size: 158mm 210mm;
-    margin: 15mm 17.25mm 15mm 17.25mm;
-    /* marks: crop cross;
+  size: 158mm 210mm;
+  margin: 15mm 17.25mm 15mm 17.25mm;
+  /* marks: crop cross;
     bleed: 3mm; */
-    font-size: 10q;
+  font-size: 10Q;
 
-    /* ノンブル */
-    @bottom-center {
-        content: counter(page);
-        margin-center: 3mm;
-        width: 8mm;
-        height: 4mm;
-        font-size: 12q;
-        text-align: center;
-        margin-top: 5mm;
-        writing-mode: horizontal-tb;
-    }
+  /* ノンブル */
+  @bottom-center {
+    content: counter(page);
+    inline-size: 8mm;
+    block-size: 4mm;
+    font-size: 12Q;
+    text-align: center;
+    margin-block-start: 5mm;
+    writing-mode: horizontal-tb;
+  }
 }
 
-body {
-    writing-mode: vertical-rl;
-    /* text-orientation: upright; */
-    font-size: 20q;
-    line-height: 36q;
-    font-family: "Noto Sans JP", sans-serif;
-    orphans: 1;
-    widows: 1;
-    text-spacing: auto;
+:root {
+  writing-mode: vertical-rl;
+  /* text-orientation: upright; */
+  font-size: 20Q;
+  line-height: 36Q;
+  font-family: "Noto Sans JP", sans-serif;
+  orphans: 1;
+  widows: 1;
+  text-spacing: auto;
 }
 
 p {
-    text-align: justify;
-    text-indent: 1em;
-    font-family: "Noto Serif JP", serif;
+  text-align: justify;
+  text-indent: 1em;
+  font-family: "Noto Serif JP", serif;
 }
 
-h2 {
-    break-before: page;
-    line-height: (36q * 3);
-    width: calc(36q * 3);
-}
-
-h3 {
-    line-height: calc(36q * 2);
-    width: calc(36q * 2);
-}
-
-figure {
-    float: top;
-    float-reference: page;
-    writing-mode: horizontal-tb;
-    width: 100%;
-    margin-bottom: 2em;
-    text-align: center;
-}
 img {
-    max-width: 95%;
+  max-block-size: 95%;
 }
 
-p img{
-    max-width: 15mm;
+p img {
+  max-block-size: 15mm;
 }
 
-hr.pagebreak{
-    break-before: page;
-    border:none;
+hr.pagebreak {
+  break-before: page;
+  border: none;
 }
 
-.serif{
-    text-indent: 0;
-    border: solid 0.5mm #000;
-    border-radius: 4mm;
-    padding: 4mm 1mm;
-    margin: 0 6mm;
-    margin-top: 21mm;
-    position: relative;
-    break-inside: avoid-page;
-    font-family: "Noto Sans JP";
-    /* border-image-source: url(face/fukidashi-tate.svg);
-    border-image-slice: 260 80 80 80;
-    border-image-width: 6mm 2mm 2mm 2mm; */
+.serif {
+  text-indent: 0;
+  border: solid 0.5mm #000;
+  border-radius: 4mm;
+  padding-block: 1mm;
+  padding-inline: 4mm;
+  margin-block: 6mm;
+  margin-inline: 0;
+  margin-inline-start: 21mm;
+  position: relative;
+  break-inside: avoid-page;
+  font-family: "Noto Sans JP";
 }
 
-.hidden-paren{
-    display: none;
+.hidden-paren {
+  display: none;
 }
 
-.serif:after{
-    content: "";
-    position: absolute;
-    width: 20mm;
-    height: 22mm;
-    top: -21mm;
-    right: -4mm;
-    border: none;
+.serif:after {
+  content: "";
+  position: absolute;
+  block-size: 20mm;
+  inline-size: 22mm;
+  inset-inline-start: -21mm;
+  inset-block-start: -4mm;
+  border: none;
 }
 
-.serif.melos::after{
-    background: url(face/fukidashi-tate-shippo.svg), url("face/face_angry_man5.png");
-    background-size: 30%, contain;
-    background-repeat: no-repeat;
-    background-position-y: 110%, 0%;
-    background-position-x: 60%, 0%;
+.serif.melos::after {
+  background: url(face/fukidashi-tate-shippo.svg), url("face/face_angry_man5.png");
+  background-size: 30%, contain;
+  background-repeat: no-repeat;
+  background-position-y: 110%, 0%;
+  background-position-x: 60%, 0%;
 }
-.serif.melos.pien::after{
-    background: url(face/fukidashi-tate-shippo.svg), url("face/pose_pien_uruuru_man.png");
-    background-size: 30%, contain;
-    background-repeat: no-repeat;
-    background-position-y: 110%, 0%;
-    background-position-x: 60%, 0%;
+.serif.melos.pien::after {
+  background: url(face/fukidashi-tate-shippo.svg), url("face/pose_pien_uruuru_man.png");
+  background-size: 30%, contain;
+  background-repeat: no-repeat;
+  background-position-y: 110%, 0%;
+  background-position-x: 60%, 0%;
 }
-.serif.melos.aseri::after{
-    background: url(face/fukidashi-tate-shippo.svg), url("face/necchusyou_face_boy5.png");
-    background-size: 30%, contain;
-    background-repeat: no-repeat;
-    background-position-y: 110%, 0%;
-    background-position-x: 60%, 0%;
+.serif.melos.aseri::after {
+  background: url(face/fukidashi-tate-shippo.svg), url("face/necchusyou_face_boy5.png");
+  background-size: 30%, contain;
+  background-repeat: no-repeat;
+  background-position-y: 110%, 0%;
+  background-position-x: 60%, 0%;
 }
 
-.serif.king::after{
-    background: url(face/fukidashi-tate-shippo.svg), url("face/royal_king_gyokuza.png");
-    background-size: 30%, contain;
-    background-repeat: no-repeat;
-    background-position-y: 110%, 0%;
-    background-position-x: 60%, 0%;
+.serif.king::after {
+  background: url(face/fukidashi-tate-shippo.svg), url("face/royal_king_gyokuza.png");
+  background-size: 30%, contain;
+  background-repeat: no-repeat;
+  background-position-y: 110%, 0%;
+  background-position-x: 60%, 0%;
 }
-.serif.oldman::after{
-    background: url(face/fukidashi-tate-shippo.svg), url("face/ojiisan_cat.png");
-    background-size: 30%, contain;
-    background-repeat: no-repeat;
-    background-position-y: 110%, 0%;
-    background-position-x: 60%, 0%;
+.serif.oldman::after {
+  background: url(face/fukidashi-tate-shippo.svg), url("face/ojiisan_cat.png");
+  background-size: 30%, contain;
+  background-repeat: no-repeat;
+  background-position-y: 110%, 0%;
+  background-position-x: 60%, 0%;
 }
-.serif.pirates::after{
-    background: url(face/fukidashi-tate-shippo.svg), url("face/kaizoku_man.png");
-    background-size: 30%, contain;
-    background-repeat: no-repeat;
-    background-position-y: 110%, 0%;
-    background-position-x: 60%, 0%;
+.serif.pirates::after {
+  background: url(face/fukidashi-tate-shippo.svg), url("face/kaizoku_man.png");
+  background-size: 30%, contain;
+  background-repeat: no-repeat;
+  background-position-y: 110%, 0%;
+  background-position-x: 60%, 0%;
 }
-.serif.youngman::after{
-    background: url(face/fukidashi-tate-shippo.svg), url("face/youngman_27.png");
-    background-size: 30%, contain;
-    background-repeat: no-repeat;
-    background-position-y: 110%, 0%;
-    background-position-x: 60%, 0%;
+.serif.youngman::after {
+  background: url(face/fukidashi-tate-shippo.svg), url("face/youngman_27.png");
+  background-size: 30%, contain;
+  background-repeat: no-repeat;
+  background-position-y: 110%, 0%;
+  background-position-x: 60%, 0%;
 }
-.serif.friend::after{
-    background: url(face/fukidashi-tate-shippo.svg), url("face/megane_lloyd_man.png");
-    background-size: 30%, contain;
-    background-repeat: no-repeat;
-    background-position-y: 110%, 0%;
-    background-position-x: 60%, 0%;
+.serif.friend::after {
+  background: url(face/fukidashi-tate-shippo.svg), url("face/megane_lloyd_man.png");
+  background-size: 30%, contain;
+  background-repeat: no-repeat;
+  background-position-y: 110%, 0%;
+  background-position-x: 60%, 0%;
+}
+
+.bibliographical_information p {
+  margin-block: 0;
 }

@@ -2,14 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 @page {
   size: A5;
-  margin: 15mm 15.5mm 15mm 15.5mm;
+  margin-block: 15mm;
+  margin-inline: 15.5mm;
 }
 
 body {
@@ -27,11 +26,13 @@ p {
   line-height: 24Q;
   text-indent: 1em;
   text-align: justify;
+  margin-block: 0;
 }
 
 /* インラインSVG */
 figure {
-  margin: 4mm 0;
+  margin-block: 4mm;
+  margin-inline: 0;
 }
 
 svg text {
@@ -43,11 +44,12 @@ svg text {
 
 .imarker {
   display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
+  inline-size: 1.5em;
+  block-size: 1.5em;
   line-height: 1.2em;
   color: #fff;
-  padding: 0.5mm 0 0.5mm 1mm;
+  padding-block-start: 0.3mm;
+  padding-inline: 1mm 0;
   text-indent: 0;
   background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cpath d='M0,0 L15,0 L20,10 L15,20, L0,20 L0,0' stroke='%23fff' fill='%23f00'%3E%3C/path%3E%3C/svg%3E");
   background-size: contain;

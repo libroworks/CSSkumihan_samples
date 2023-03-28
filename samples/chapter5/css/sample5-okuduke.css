@@ -2,33 +2,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 @page {
   size: A5;
-  margin: 15mm 15.5mm 15mm 15.5mm;
+  margin-block: 15mm;
+  margin-inline: 15.5mm;
 }
 
 body {
   font-family: "Noto Sans JP";
   font-weight: 400;
-  text-spacing: normal;
+  text-spacing: none;
   widows: 1;
   orphans: 1;
 }
 
+p {
+  margin-block: 0;
+}
+
 /* 奥付 */
 .okuduke-container {
-  height: 180mm;
+  block-size: 180mm;
   font-size: 12Q;
   line-height: 1.25em;
   text-indent: 0;
   display: grid;
   grid-template-rows: 15mm auto 18mm;
-  grid-template-areas: "header" "book-info" "footer";
+  grid-template-areas: "header" "content" "footer";
 }
 
 /* 上部のスタッフリスト */
@@ -46,38 +49,42 @@ body {
 }
 /* 書籍情報 */
 .book-info {
-  grid-area: book-info;
+  grid-area: content;
   align-self: end;
   display: grid;
-  grid-template-columns: 4em auto; /*★*/
-  column-gap: 1em; /*★*/
+  grid-template-columns: 4em auto;
+  column-gap: 1em;
   row-gap: 1mm;
 }
 dt {
   text-align-last: justify;
+  margin: 0;
 }
 dt.booktitle,
 dt.publish-date,
 dt.isbn-copy {
   display: none;
 }
+dd {
+  margin: 0;
+}
 dd.booktitle {
   grid-column: 1/3;
   font-size: 20Q;
   line-height: 1.5em;
-  border-bottom: solid 0.5mm #000;
-  padding-bottom: 2mm;
-  margin-bottom: 2mm;
+  border-block-end: solid 0.5mm #000;
+  padding-block-end: 2mm;
+  margin-block-end: 2mm;
 }
 dd.publish-date {
   grid-column: 1/3;
-  height: 2.5lh;
+  block-size: 2.5lh;
 }
 dd.publish-date .date {
-  width: 4.5em;
   display: inline-block;
-  text-align: right;
-  margin-right: 2em;
+  inline-size: 4.5em;
+  text-align: end;
+  margin-inline-end: 2em;
 }
 dd.isbn-copy {
   grid-column: 1/3;

@@ -4,13 +4,12 @@
 /*リセット*/
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 @page {
-  size: 148mm 210mm;
-  margin: 17.5mm 17.25mm 17.5mm 17.25mm;
+  size: A5;
+  margin-block: 17.5mm;
+  margin-inline: 17.25mm;
   font-size: 10Q;
 
   /* ノンブル */
@@ -23,11 +22,11 @@
 :root {
   font-size: 20Q;
   line-height: 36Q;
-}
-
-body {
   writing-mode: vertical-rl;
   /* text-orientation: upright; */
+}
+
+:root {
   font-family: "Noto Sans JP";
   orphans: 1;
   widows: 1;
@@ -37,38 +36,36 @@ body {
 p {
   text-align: justify;
   text-indent: 1em;
+  margin-block: 0;
 }
 
 em {
   font-style: normal;
   text-emphasis-style: sesame;
+  /* background: #eee; */
 }
 
 h2 {
   break-before: page;
   line-height: 40Q;
-  width: 3rlh;
+  block-size: 3rlh;
   text-spacing: auto;
 }
 
 h3 {
   line-height: 2rlh;
-  width: 2rlh;
-}
-
-ul,
-ol {
-  margin-top: 2em;
+  block-size: 2rlh;
 }
 
 figure {
-  float: top;
+  float: inline-end;
   float-reference: page;
-  writing-mode: horizontal-tb;
-  width: 100%;
-  margin-bottom: 2em;
-  text-align: center;
+  margin-block: 0;
+  margin-inline: 1.2em 0;
+  display: grid;
+  grid-template-columns: auto auto;
 }
-img {
-  max-width: 95%;
+figcaption {
+  writing-mode: horizontal-tb;
+  text-align: center;
 }

@@ -124,6 +124,7 @@ link:
 </div>
 
 
+
 <hr style="break-after: page; border: none;">
 
 ```python
@@ -269,18 +270,31 @@ Windows 7からWindows 17へ
 
 <div style="border: solid 0.5mm #000; width: 20mm; height: 20mm; font-size: 20Q; line-height: 22Q; margin-left: 3.25mm;">CSS 20mm四方</div>
 
-<!-- <hr style="break-after: left; border: none;">
 
-過去に「コンピュータの歴史」を**ブール論理（Boolean Logic）**の誕生あたりからたどろうとして、いろいろと調べてみたのだが、**ジョージ・ブール氏**[^1]の考えたものは現在ブール論理として習うものとかなり違っていた。ブール氏が考えたのは、*言葉で推論するとどうしてもあいまいさが生じるので、数式を使って推論すべきだ*というものだった。実際、ブール氏の論文[^2]を見てみると、足し算や掛け算らしき数式しか書かれていない。
+<hr style="break-after: verso; border: none;">
 
-[^1]: ジョージブールはイギリスの数学者（1815年11月2日 - 1864年12月8日）
-[^2]: The Mathematical Analysis of Logic by George Boole -->
+<figure>
 
-<!-- <hr style="break-after: left; border: none;">
+![350dpiの写真](img/photo350dpi.png){width="136"}
+![200dpiの写真](img/photo200dpi.png){width="136"}
+![96dpiの写真](img/photo96dpi.png){width="136"}
 
-過去に「コンピュータの歴史」を**ブール論理（Boolean Logic）**の誕生あたりからたどろうとして、いろいろと調べてみたのだが、**ジョージ・ブール氏**[^3]の考えたものは現在ブール論理として習うものとかなり違っていた。ブール氏が考えたのは、*言葉で推論するとどうしてもあいまいさが生じるので、数式を使って推論すべきだ*というものだった。実際、ブール氏の論文[^4]を見てみると、足し算や掛け算らしき数式しか書かれていない。
+</figure>
 
 
-[^3]: ジョージブールはイギリスの数学者（1815年11月2日 - 1864年12月8日） [https://ja.wikipedia.org/wiki/ジョージ・ブール](https://ja.wikipedia.org/wiki/ジョージ・ブール)
-[^4]: The Mathematical Analysis of Logic by George Boole -->
 
+### 名前付きページのテスト{.named-test}
+
+```
+@page named-test-page {
+  background: url("back-a5plus3mm.png");
+  background-size: calc(148mm + 6mm);
+  background-repeat: no-repeat;
+  background-position: -3mm;
+}
+
+section:has(> .named-test) {
+  page: named-test-page;
+  break-before: page;
+}
+```

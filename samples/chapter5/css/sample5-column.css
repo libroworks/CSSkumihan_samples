@@ -2,19 +2,19 @@
 
 ul,
 ol {
-  margin: 0.5lh 0 0.5lh 2em;
+  margin-block: 0.5lh;
+  margin-inline: 2em 0;
 }
 
-body {
+:root {
   column-count: 2;
   column-gap: 2em;
   column-rule: solid 0.5mm #000;
   column-fill: auto;
 }
 
-h1,
 h2 {
-  float: top;
+  float: block-start;
   float-reference: page;
   background: #fff;
 }
@@ -24,7 +24,7 @@ h2 {
   border: solid 0.5mm #000;
   padding: 4mm;
   background: #fff;
-  float: bottom;
+  float: block-end;
   float-reference: page;
   column-count: 3;
   column-gap: 1.2em;
@@ -34,6 +34,7 @@ h2 {
   column-span: all;
   font-size: 15Q;
   line-height: 2em;
+  margin-block: 0;
 }
 .article p {
   font-size: 11Q;
@@ -42,9 +43,9 @@ h2 {
 .article::before {
   content: "";
   background: #fff;
+  inline-size: 100%;
+  block-size: 4mm;
   position: absolute;
-  width: 100%;
-  height: 4mm;
-  top: -4.5mm;
-  left: 0;
+  inset-block-start: -4.5mm;
+  inset-inline-start: 0;
 }

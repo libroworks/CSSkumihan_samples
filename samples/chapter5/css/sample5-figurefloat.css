@@ -1,28 +1,30 @@
 @import "sample5-headings.css";
 
 figure {
-  margin: 4mm 0;
+  margin-block: 4mm;
+  margin-inline: 0;
   background: #eee;
 }
 
 img {
-  max-width: 100%;
+  max-inline-size: 100%;
   border: solid 0.5mm #000;
 }
 img[src$=".svg"] {
   border: none;
 }
 
-figure.float-bottom {
-  float: bottom;
+figure:has(.float-bottom) {
+  float: block-end;
   float-reference: page;
-  margin-bottom: 0;
+  margin-block-end: 0;
 }
-figure.float-right {
-  float: right;
+figure:has(.float-right) {
+  float: inline-end;
   /* float-reference: page; */
-  width: 17em;
-  margin: 2mm 0 2mm 2em;
+  inline-size: 17em;
+  margin-block: 2mm;
+  margin-inline: 2em 0;
 }
 
 .float-clear {

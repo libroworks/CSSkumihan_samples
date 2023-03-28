@@ -1,0 +1,12 @@
+h2::before {
+  content: none;
+}
+#toc a {
+  color: #000;
+  text-decoration: none;
+}
+#toc a::after {
+  content: leader(dotted) target-counter(attr(href url), page);
+  margin-inline-start: 1em;
+  text-align: end;
+}

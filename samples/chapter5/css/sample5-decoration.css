@@ -2,14 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
 @page {
   size: A5;
-  margin: 15mm 15.5mm 15mm 15.5mm;
+  margin-block: 15mm;
+  margin-inline: 15.5mm;
 }
 
 body {
@@ -27,6 +26,7 @@ p {
   line-height: 24Q;
   text-indent: 1em;
   text-align: justify;
+  margin-block: 0;
 }
 
 /* ルート要素 */
@@ -42,16 +42,16 @@ h3 {
   line-height: 1.5em;
   letter-spacing: 0.25em;
   color: rgba(255, 255, 255, 0);
-  -webkit-text-stroke: 0.2mm #000;
   text-stroke: 0.2mm #000;
   text-shadow: #aaa 0.05em 0.05em 0;
+  margin-block: 0;
 }
 
 ul {
   font-size: 16Q;
   line-height: 1.7em;
-  margin-left: 2em;
-  margin: 0.5lh 0 1lh 2em;
+  margin-block: 0.5lh 1lh;
+  margin-inline: 2em 0;
 }
 
 /* 丸付き文字 */
@@ -60,10 +60,10 @@ ul {
   border: solid 0.5mm #000;
   border-radius: 50%;
   display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
+  inline-size: 1.5em;
+  block-size: 1.5em;
   position: relative;
-  top: -0.05em;
+  inset-block-start: -0.05em;
   text-align: center;
   line-height: 1em;
 }
@@ -73,11 +73,11 @@ ul {
   font-size: 0.9em;
   line-height: 0.9lh;
   transform: scaleY(1.111);
-  margin: 0.2lh 0;
+  margin-block: 0.2lh 0.3lh;
 }
 .chou2 {
   font-size: 0.8em;
   line-height: 0.8lh;
   transform: scaleY(1.25);
-  margin: 0.2lh 0;
+  margin-block: 0.2lh;
 }

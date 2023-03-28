@@ -1,0 +1,15 @@
+<nav id="toc" role="doc-toc">- <a class="toc-chapter" href="chapter1.html#none">第1章重箱の左隅</a>
+  - <a class="toc-section" href="chapter1.html#none"><span class="dashmask">論理回路から加算器は飛躍しすぎ？</span></a>
+    - <a class="toc-subsection" href="chapter1.html#none">論理回路の誕生</a>
+  - <a class="toc-section" href="chapter1.html#none"><span class="dashmask">通信機能は5大装置のどこに入る？</span></a>
+  - <a class="toc-section" href="chapter1.html#none"><span class="dashmask">デジタルは人間の頭の中にしかない</span></a>
+- <a class="toc-chapter" href="chapter2.html#none">第2章重箱の右隅</a>
+  - <a class="toc-section" href="chapter2.html#none"><span class="dashmask">論理回路から加算器は飛躍しすぎ？</span></a>
+    - <a class="toc-subsection" href="chapter2.html#none">論理回路の誕生</a>
+  - <a class="toc-section" href="chapter2.html#none"><span class="dashmask">通信機能は5大装置のどこに入る？</span></a>
+  - <a class="toc-section" href="chapter2.html#none"><span class="dashmask">デジタルは人間の頭の中にしかない</span></a>
+- <a class="toc-chapter" href="chapter3.html#none">第3章重箱の下隅</a>
+  - <a class="toc-section" href="chapter3.html#none"><span class="dashmask">論理回路から加算器は飛躍しすぎ？</span></a>
+    - <a class="toc-subsection" href="chapter3.html#none">論理回路の誕生</a>
+  - <a class="toc-section" href="chapter3.html#none"><span class="dashmask">通信機能は5大装置のどこに入る？</span></a>
+  - <a class="toc-section" href="chapter3.html#none"><span class="dashmask">デジタルは人間の頭の中にしかない</span></a>

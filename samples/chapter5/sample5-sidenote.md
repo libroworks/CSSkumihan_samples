@@ -7,6 +7,7 @@ link:
 ### 論理回路の誕生
 <div class="sidenote top2Ldown">
 <h5>クロード・シャノン</h5>
+
 「ビット」という言葉の産みの親でもある。
 </div>
 
@@ -16,6 +17,7 @@ link:
 
 <div class="sidenote">
 <h5>半加算器</h5>
+
 繰り上がりを処理するものは全加算器（Full Adder）と呼ぶ。
 </div>
 

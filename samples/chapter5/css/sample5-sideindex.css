@@ -1,7 +1,8 @@
 @import "sample5-headings.css";
 
 :root {
-  --chapter-number: 2;
+  --chapter-number: 1;
+  --index-size: 10mm;
 }
 
 @page {
@@ -15,27 +16,38 @@
     content: counter(chapter-counter);
     font-size: 29Q;
     line-height: 1em;
-    text-align: left;
-    width: 12mm;
-    margin-left: 5.5mm;
-    padding-left: 1mm;
-    height: 8mm;
-    margin-top: calc(5mm * var(--chapter-number));
-    border-bottom: solid 2mm #3a3a3a;
+    text-align: start;
+    inline-size: 12mm;
+    margin-inline-start: 5.5mm;
+    padding-inline-start: 1mm;
+    block-size: calc(var(--index-size) - 2mm);
+    margin-block-start: calc(var(--index-size) * (var(--chapter-number) - 1));
+    border-block-end: solid 2mm #3a3a3a;
     background: #ddd;
+  }
+  @right-bottom {
+    content: "";
+    inline-size: 12mm;
+    margin-inline-start: 5.5mm;
+    block-size: calc(var(--index-size) - 2mm);
+    margin-block-end: calc(var(--index-size) * (var(--chapter-number) - 1));
+    /* border-block-start: solid 2mm #3a3a3a; */
+    /* background: #f00; */
   }
 
   @right-middle {
     content: string(chapter, first);
     font-size: 11Q;
     line-height: 1em;
-    width: 1em;
     writing-mode: vertical-rl;
+    block-size: 1em;
     vertical-align: top;
-    margin-left: 6.5mm;
-    margin-top: calc(8mm + 2.5mm * var(--chapter-number));
-    background: #eee;
+    margin-block-end: 6.5mm;
+    padding-inline: 2mm;
+    /* background: #eee; */
   }
+
+  /* 節の柱 */
   @top-right {
     content: string(section-number, first) " " string(section, first);
     font-size: 11Q;
