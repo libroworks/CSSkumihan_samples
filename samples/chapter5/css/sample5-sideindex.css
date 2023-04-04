@@ -21,8 +21,9 @@
     margin-inline-start: 5.5mm;
     padding-inline-start: 1mm;
     block-size: calc(var(--index-size) - 2mm);
-    margin-block-start: calc(var(--index-size) * (var(--chapter-number) - 1));
+    margin-block-start: 0;
     border-block-end: solid 2mm #3a3a3a;
+    transform: translateY(calc(var(--index-size) * (var(--chapter-number) - 1)));
     background: #ddd;
   }
   @right-bottom {
@@ -30,7 +31,7 @@
     inline-size: 12mm;
     margin-inline-start: 5.5mm;
     block-size: calc(var(--index-size) - 2mm);
-    margin-block-end: calc(var(--index-size) * (var(--chapter-number) - 1));
+    margin-block-end: 0;
     /* border-block-start: solid 2mm #3a3a3a; */
     /* background: #f00; */
   }
@@ -44,6 +45,7 @@
     vertical-align: top;
     margin-block-end: 6.5mm;
     padding-inline: 2mm;
+    transform: translateY(calc(var(--index-size) * (var(--chapter-number) - 1)));
     /* background: #eee; */
   }
 
