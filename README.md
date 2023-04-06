@@ -1,9 +1,15 @@
 # CSSkumihan_samples
-CSS組版のサンプル集
+このリポジトリは、『Webの技術で「本」が作れるCSS組版 Vivliostyle入門』のサンプルファイルを収録したページです。
 
-[Link to github.io](https://libroworks.github.io/CSSkumihan_samples/)
+【書籍ページのURL】
 
-吹き出し版「走れメロス」
+![book cover](bookimage.png)
+
+
+https://libroworks.co.jp
+
+## 吹き出し版「走れメロス」
+以下のサンプルは書籍未収録です。
 
 - [Vivliostyle Viewerで表示](https://vivliostyle.org/viewer/#src=https://libroworks.github.io/CSSkumihan_samples/samples/melos/sample5_x_Melos.html)
 - [素のHTML](https://libroworks.github.io/CSSkumihan_samples/samples/melos/sample5_x_Melos.html)
