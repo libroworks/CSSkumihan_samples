@@ -2,6 +2,7 @@
 link:
   - rel: 'stylesheet'
     href: 'css/sample5-tategaki.css'
+lang: 'ja'
 ---
 
 # コンピュータの<br>重箱の隅
