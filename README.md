@@ -1,5 +1,5 @@
 # CSSkumihan_samples
-このリポジトリは、**『Web技術で「本」が作れるCSS組版 Vivliostyle入門』**のサンプルファイルを収録したページです。
+このリポジトリは、 **『Web技術で「本」が作れるCSS組版 Vivliostyle入門』** のサンプルファイルを収録したページです。
 
 【書籍ページのURL】
 
