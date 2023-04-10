@@ -2,6 +2,7 @@
 link:
   - rel: 'stylesheet'
     href: 'css/sample1.css'
+lang: 'ja'
 ---
 
 # コンピュータの<br>重箱の隅{#h1_1 .chapter}
