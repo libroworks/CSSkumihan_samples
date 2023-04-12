@@ -1,7 +1,7 @@
 # CSSkumihan_samples
 このリポジトリには **『Web技術で「本」が作れるCSS組版 Vivliostyle入門』** のサンプルファイルを収録しています。
 
-【書籍ページのURL】
+[【書籍ページ】https://www.c-r.com/book/detail/1493](https://www.c-r.com/book/detail/1493)
 
 ![book cover](bookimage.png)
 
