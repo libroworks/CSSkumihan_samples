@@ -21,13 +21,13 @@ https://libroworks.co.jp
 
 ![Noto Sans JP](img/img1.png)
 
-フォントデータの問題なので，現状の対処方法としては，問題を起こさないフォントに置き換えれば解決します。
+フォントデータの問題なので，現状の対処方法としては，問題を起こさないフォントに置き換えます。
 
 ![Dela Gothic One](img/img2.png)
 
 参考：samples/text_stroke_test/css/sample5-decoration.css
 
-根本的な解決策としては，Noto Sans JPのフォントデータが変わるか，Google Chromiumのtext-strokeの実装が修正されるのを待つしかなさそうです。
+根本的な解決策としては，Noto Sans JPのフォントデータが変わるか，Chromiumのtext-strokeの実装が修正されるのを待つしかなさそうです。
 
 
 ### ソースコードの縞模様（書籍163ページ，235ページ）
