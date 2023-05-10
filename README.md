@@ -15,7 +15,7 @@ https://libroworks.co.jp
 - [素のHTML（Vivliostyleを通さない状態）](https://libroworks.github.io/CSSkumihan_samples/samples/melos/sample5_x_Melos.html)
 - [ソース](https://github.com/libroworks/CSSkumihan_samples/blob/main/samples/melos/sample5_x_Melos.html)
 
-## 刊行後に発見された注意点について
+## 刊行後に発見された注意点＆対処法
 ### Noto Sans JPと袋文字（書籍146ページ）
 2023年4月頭にGoogle FontsのNoto Sans JPのデータに変更が加えられました。大部分のサンプルには影響ありませんが，text-strokeプロパティによる袋文字（sample5-decoration.md）は，次のように表示がおかしくなります。
 
