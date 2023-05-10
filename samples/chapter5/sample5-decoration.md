@@ -6,7 +6,7 @@ link:
 
 ### 五大機能
 
-- <span class="round">1</span>制御：記憶装置記憶装置からプログラムを読み込み、各装置に指示を出す
+- <span class="round">1</span>制御：記憶装置からプログラムを読み込み、各装置に指示を出す
 - <span class="round">2</span>演算：四則演算などの計算を行う
 - <span class="round">3</span>記憶：プログラムやデータを記憶する
 - <span class="round">4</span>入力：外部から情報を取り込む
