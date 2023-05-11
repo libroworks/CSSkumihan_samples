@@ -40,7 +40,7 @@ InDesignを使わない入稿でも，**「RGBから変換できない」とい�
 ![vs_pre_bg.png](img/vs_pre_bg.png)
 
 
-repeating-linear-graientの部分を，次のように置き換えます。ポイントは，背景画像のサイズを縞模様1つ分の大きさに合わせて指定することです。行送りが18Qなので，縞模様1セットの高さは36Q，つまり9ミリとなります。幅はpre要素に合わせます。
+repeating-linear-graientの部分を，次のように置き換えます。ポイントは，背景画像のサイズを縞模様1セット分の大きさに合わせて指定することです。行送りが18Qなので，縞模様1セットの高さは36Q，つまり9ミリとなります。幅はpre要素に合わせます。
 
 ```
   /* background: repeating-linear-gradient(#eee 0, #eee 18Q, #fff 18Q, #fff 36Q); */
